@@ -1,0 +1,117 @@
+<html>
+<header>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/timeline.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</header>
+<style>
+    html {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100%;
+        background-color: #9EA9C1;
+    }
+
+    .imagen-central {
+        min-height: 100%;
+    }
+
+    .main-img {
+        margin-top: 120px;
+    }
+    
+    .text-main{
+         margin-top: 110px;
+    }
+    
+    .input-main{
+        border-radius: 8px;
+        padding: 10px;
+        background-color: white;
+        border: none;
+        width: 100%;
+    }
+    
+    .button-main{
+        width: 100%;
+        height: 40px;
+        font-size: 15px;
+    }
+    
+    .linea-azul{
+        background-color: #383C45;
+        height: 200px;
+        position: absolute;
+        z-index: 0;
+        top: 15%;
+        width: 89%;
+        left: 0;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    
+    .container-fluid>p>label{
+        margin-left: 10px;
+    }
+
+</style>
+
+<body>
+
+    <div class="container-fluid">
+        
+        <div class="linea-azul"></div>
+
+        <div class="row">
+
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 imagen-central text-center">
+                <img src="assets/img/keql.png" class="main-img" width="35%">
+
+                <div class="row text-main">
+                    <div class="col-sm-offset-2 col-sm-3">
+
+                        <input type="text" class="input-main" placeholder="FROM">
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="input-main" placeholder="TO">
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn-default button-main" onclick="irA()"> > </button>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                
+                </div>
+            </div>
+
+        </div>
+        
+        <script>
+        function irA(){
+            location.href = "mapa.html";
+        }
+        </script>
+        
+        
+<footer class="container-fluid">
+  <p><label>About us</label> <label>Support</label> <label>Contact</label> <label>Here</label></p>
+</footer>
+</body>
+
+</html>
